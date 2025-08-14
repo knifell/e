@@ -1,0 +1,301 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Официальный сайт Кара-Гуз айыл аймагы</title>
+    <meta name="description" content="Официальный портал местного самоуправления Кара-Гуз айыл аймагы. Новости, документы, обращения граждан, контакты.">
+    <meta name="keywords" content="Кара-Гуз, айыл аймагы, Кара-Кулжинский район, Ошская область, местное самоуправление, новости, документы, контакты">
+    <meta name="author" content="Разработчик сайта">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Дополнительные стили для блока "Борьба с коррупцией" */
+        .info-card.corruption {
+            background-color: #fce4e4;
+            border: 1px solid #e57373;
+        }
+
+            .info-card.corruption .card-icon {
+                color: #d32f2f;
+            }
+
+            .info-card.corruption .card-link {
+                color: #d32f2f;
+            }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Логотип Кара-Гуз айыл аймагы" class="logo-img" width="50" height="50">
+                <span class="logo-text">КАРА-ГУЗ</span>
+            </a>
+            <nav class="nav" role="navigation">
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link" data-target="home">Главная</a></li>
+                    <li><a href="#about" class="nav-link" data-target="about">О нас</a></li>
+                    <li><a href="#news" class="nav-link" data-target="news">Новости</a></li>
+                    <li><a href="#appeals" class="nav-link" data-target="appeals">Обращения</a></li>
+                    <li><a href="#gallery" class="nav-link" data-target="gallery">Галерея</a></li>
+                    <li><a href="#contacts" class="nav-link" data-target="contacts">Контакты</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" aria-label="Открыть меню" aria-controls="nav-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <div class="container">
+
+            <section id="home" class="content-section active">
+                <div class="home-grid">
+                    <div class="home-main">
+                        <div class="hero-section">
+                            <h1>Официальный портал местного самоуправления</h1>
+                            <p>Кара-ГУЗ айыл аймагы</p>
+                        </div>
+                        <div class="info-blocks">
+                            <div class="info-card" data-target="news">
+                                <div class="card-icon">📰</div>
+                                <h3>Последние новости</h3>
+                                <p>Будьте в курсе всех событий нашего региона. <a href="news.html" class="card-link" data-target="news">Смотреть все новости</a></p>
+                            </div>
+                            <div class="info-card" onclick="window.location.href='указ.html'">
+                                <div class="card-icon">📁</div>
+                                <h3>Указы</h3>
+                                <p>Ознакомьтесь с указами. <a href="указ.html" class="card-link">Перейти в раздел</a></p>
+                            </div>
+                            <div class="info-card corruption">
+                                <div class="card-icon">🚫</div>
+                                <h3>Борьба с коррупцией</h3>
+                                <p>Информация о мерах по противодействию коррупции. <a href="corporation.html" class="card-link">Перейти в раздел</a></p>
+                            </div>
+                            <div class="info-card" onclick="window.location.href='указ.html'">
+                                <div class="card-icon">🎯</div>
+                                <h3>Планы и цели</h3>
+                                <p>Ознакомьтесь с будущими прогрессиями. <a href="plans.html" class="card-link">Перейти в раздел</a></p>
+                            </div>
+                            <div class="info-card">
+                                <div class="card-icon">🗺️</div>
+                                <h3>Планы по улучшению аильного округа</h3>
+                                <p>План по социально-экономическому развитию на 2025-2030 годы. <a href="progress.html" class="card-link">Перейти в раздел</a></p>
+                            </div>
+                            <div class="info-card" data-target="appeals">
+                                <div class="card-icon">✍️</div>
+                                <h3>Обращение</h3>
+                                <p>Задайте свой вопрос или оставьте обращение онлайн. <a href="#appeals" class="card-link" data-target="appeals">Перейти в раздел</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <aside class="home-sidebar">
+                        <div class="leader-block">
+                            <h3>Глава айыл окмоту</h3>
+                            <img src="images/глава_фото.jpg" alt="Фото главы Иса уулу Нурдин" class="leader-photo" loading="lazy" width="300" height="400">
+                            <div class="leader-info">
+                                <h4>Иса уулу Нурдин</h4>
+                                <p>Глава Кара-Гуз айыл аймагы</p>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </section>
+
+            <section id="about" class="content-section" style="display: none;">
+                <h2 class="section-title">Об айылном аймаке</h2>
+                <div class="about-info">
+                    <h3>Общая информация</h3>
+                    <p><strong>Официальное название:</strong> Кара-Гуз айыл аймагынын айыл өкмөтү</p>
+                    <p><strong>Год основания:</strong> 2024</p>
+                    <p><strong>Географическое расположение:</strong> Расположен в западной части Кара-Кулжинского района, Ошской области.</p>
+                    <p><strong>Глава:</strong> Иса уулу Нурдин</p>
+                    <p><strong>Климат:</strong> Умеренный континентальный</p>
+                    <p><strong>Состав:</strong> В состав айыл окмоту входят 8 сел.</p>
+                    <div class="key-indicators">
+                        <h3>Ключевые показатели (на 01.01.2025)</h3>
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Показатель</th>
+                                    <th>Значение</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Площадь</td>
+                                    <td>27141 га</td>
+                                </tr>
+                                <tr>
+                                    <td>Расстояние от районного центра</td>
+                                    <td>24 км</td>
+                                </tr>
+                                <tr>
+                                    <td>Расстояние от областного центра</td>
+                                    <td>110 км</td>
+                                </tr>
+                                <tr>
+                                    <td>Общая численность населения</td>
+                                    <td>10219 человек</td>
+                                </tr>
+                                <tr>
+                                    <td>Количество хозяйств</td>
+                                    <td>1860</td>
+                                </tr>
+                                <tr>
+                                    <td>Высота над уровнем моря</td>
+                                    <td>1500-1900 м</td>
+                                </tr>
+                                <tr>
+                                    <td>Национальный состав</td>
+                                    <td>Кыргызы — 10219 человек (100%)</td>
+                                </tr>
+                                <tr>
+                                    <td>Социальный состав</td>
+                                    <td>Женщины — 5160, Мужчины — 5059</td>
+                                </tr>
+                                <tr>
+                                    <td>Зарегистрировано преступлений</td>
+                                    <td>4</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="village-info">
+                        <h3>Села и их население</h3>
+                        <ul class="village-list">
+                            <li><strong>Кара-Жыгач:</strong> 1185 человек</li>
+                            <li><strong>Алтын-Күрөк:</strong> 437 человек</li>
+                            <li><strong>Насирдин:</strong> 416 человек</li>
+                            <li><strong>Жетим-Дөбө:</strong> 1240 человек</li>
+                            <li><strong>Калматай:</strong> 1050 человек</li>
+                            <li><strong>Жаңы-Талаа:</strong> 1195 человек</li>
+                            <li><strong>Кеңеш:</strong> 2906 человек</li>
+                            <li><strong>Пор:</strong> 1776 человек</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="news" class="content-section" style="display: none;">
+                <h2 class="section-title">Последние новости</h2>
+                <div class="news-list-view">
+                </div>
+                <div class="news-full-view">
+                </div>
+            </section>
+
+            <section id="documents" class="content-section" style="display: none;">
+                <h2 class="section-title">Документы</h2>
+                <div class="document-filters">
+                    <button class="filter-btn active" data-filter="all">Все</button>
+                    <button class="filter-btn" data-filter="reports">Отчеты</button>
+                    <button class="filter-btn" data-filter="resolutions">Постановления</button>
+                </div>
+                <ul class="documents-list">
+                    <li data-category="resolutions">
+                        <a href="#">
+                            <div class="doc-info">
+                                <h4>Постановление "О мерах по благоустройству села"</h4>
+                                <p><strong>Дата:</strong> 15.07.2025</p>
+                                <p><strong>Описание:</strong> Постановление, касающееся уборки и озеленения территорий айыл аймагы.</p>
+                            </div>
+                        </a>
+                        <a href="#" class="download-link" download>Скачать (PDF)</a>
+                    </li>
+                    <li data-category="reports">
+                        <a href="#">
+                            <div class="doc-info">
+                                <h4>Отчет о расходовании средств за II квартал 2025</h4>
+                                <p><strong>Дата:</strong> 30.06.2025</p>
+                            </div>
+                        </a>
+                        <a href="#" class="download-link" download>Скачать (PDF)</a>
+                    </li>
+                    <li data-category="resolutions">
+                        <a href="#">
+                            <div class="doc-info">
+                                <h4>Постановление "О порядке рассмотрения обращений граждан"</h4>
+                                <p><strong>Дата:</strong> 01.03.2023</p>
+                                <p><strong>Описание:</strong> Документ, регламентирующий процесс приёма и рассмотрения обращений жителей.</p>
+                            </div>
+                        </a>
+                        <a href="#" class="download-link" download>Скачать (PDF)</a>
+                    </li>
+                    <li data-category="reports">
+                        <a href="#">
+                            <div class="doc-info">
+                                <h4>Отчет о проделанной работе за 2024 год</h4>
+                                <p><strong>Дата:</strong> 15.01.2025</p>
+                                <p><strong>Описание:</strong> Итоговый годовой отчет о деятельности айыл окмоту.</p>
+                            </div>
+                        </a>
+                        <a href="#" class="download-link" download>Скачать (PDF)</a>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="appeals" class="content-section" style="display: none;">
+                <h2 class="section-title">Свяжитесь с нами</h2>
+                <div class="appeals-info">
+                    <p>Если у вас есть официальное обращение, вопрос или предложение, вы можете отправить его напрямую на нашу электронную почту. Мы рассмотрим ваше письмо в ближайшее время.</p>
+                    <p><strong>Электронная почта для обращений:</strong></p>
+                    <a href="mailto:iklammm5@gmail.com" class="email-link">iklammm5@gmail.com</a>
+                    <p class="email-instruction">Нажмите на адрес, чтобы отправить письмо через вашу почтовую программу.</p>
+                </div>
+            </section>
+
+            <section id="gallery" class="content-section" style="display: none;">
+                <h2 class="section-title">Галерея</h2>
+                <div class="gallery-filters">
+                    <input type="text" id="gallery-search" placeholder="Поиск по галерее...">
+                </div>
+                <div class="gallery-grid">
+                    <img src="images/Screenshot_20250808_213117_Video Player.jpg" alt="Описание первой фотографии" ...>
+                    <img src="images/Screenshot_20250808_213441_Video Player.jpg" alt="Описание первой фотографии" ...>
+                    <img src="images/Screenshot_20250808_213458_Video Player.jpg" alt="Описание первой фотографии" ...>
+                    <img src="images/Screenshot_20250808_213513_Video Player.jpg" alt="Описание первой фотографии" ...>
+                    <img src="images/Screenshot_20250808_213527_Video Player.jpg" alt="Описание первой фотографии" ...>
+                    <img src="images/Screenshot_20250808_213538_Video Player.jpg" alt="Описание первой фотографии" ...>
+                    <img src="images/Screenshot_20250808_213617_Video Player.jpg" alt="Описание первой фотографии" ...>
+                    <img src="images/Screenshot_20250808_213702_Video Player.jpg" alt="Описание первой фотографии" ...>
+                    <img src="images/Screenshot_20250808_213716_Video Player.jpg" alt="Описание первой фотографии" ...>
+                    <img src="images/Screenshot_20250808_213731_Video Player.jpg" alt="Описание первой фотографии" ...>
+                </div>
+            </section>
+
+            <section id="contacts" class="content-section" style="display: none;">
+                <h2 class="section-title">Контакты</h2>
+                <div class="contacts-info">
+                    <p><strong>Адрес:</strong> Кара-Кулжа району, Жаңы-Талаа айылы</p>
+                    <p><strong>Телефон:</strong> +996 (XXX) XXX-XX-XX (Пример)</p>
+                    <p><strong>Email:</strong> iklammm5@gmail.com</p>
+                    <p><strong>Почтовый индекс:</strong> 713600 (Пример)</p>
+                </div>
+                <div id="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1469.7547192809618!2d73.84411135450415!3d40.52843076891041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38bd431e5f8f170f%3A0xe543e414c274483a!2z0J7QsdCw0LfQsNGA0L7Qu9C-INCS0YPRgNC10YLQsNC70Y_RgiDQvtC_0LrQvtC70YzQvdGD0YfQtdC90L3QvtC5INGA0LXRidC10YDQuA!5e0!3m2!1sru!2skg!4v1722830832014!5m2!1sru!2skg" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>© 2025 Кара-Гуз айыл аймагы. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

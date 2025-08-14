@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новости - Кара-Гуз айыл аймагы</title>
+    <meta name="description" content="Последние новости и объявления Кара-Гуз айыл аймагы.">
+    <meta name="keywords" content="Кара-Гуз, новости, события, объявления">
+    <meta name="author" content="Разработчик сайта">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Логотип Кара-Гуз айыл аймагы" class="logo-img" width="50" height="50">
+                <span class="logo-text">КАРА-ГУЗ</span>
+            </a>
+            <nav class="nav" role="navigation">
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Главная</a></li>
+                    <li><a href="index.html#about" class="nav-link" data-target="about">О нас</a></li>
+                    <li><a href="news.html" class="nav-link active">Новости</a></li>
+                    <li><a href="index.html#appeals" class="nav-link" data-target="appeals">Обращения</a></li>
+                    <li><a href="index.html#gallery" class="nav-link" data-target="gallery">Галерея</a></li>
+                    <li><a href="index.html#contacts" class="nav-link" data-target="contacts">Контакты</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" aria-label="Открыть меню" aria-controls="nav-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <div class="container">
+            <section id="news" class="content-section">
+                <h2 class="section-title">Последние новости</h2>
+                <div class="news-list-view">
+                </div>
+                <div class="news-full-view">
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>© 2025 Кара-Гуз айыл аймагы. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="news-script.js"></script>
+
+</body>
+</html>
